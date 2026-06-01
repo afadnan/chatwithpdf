@@ -50,7 +50,6 @@ else:
         st.session_state.messages.append({"role": "user", "content": query_str})
         with st.chat_message("user"):
             st.write(query_str)
-
         # Fetch and display assistant response
         with st.chat_message("assistant"):
             with st.spinner("Searching database and thinking..."):
