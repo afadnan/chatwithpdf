@@ -7,13 +7,11 @@ BACKEND_API_URL = os.environ.get("BACKEND_API_URL", "http://localhost:8000")
 
 st.set_page_config(page_title="Chat with PDF UI", page_icon="📄", layout="wide")
 st.title("📄 Chat with PDF (Frontend UI)")
-
 # Initialize session state variables to remember chat history and file status
 if "messages" not in st.session_state:
     st.session_state.messages = []
 if "pdf_ready" not in st.session_state:
     st.session_state.pdf_ready = False
-
 # Sidebar for file uploading
 with st.sidebar:
     st.header("1. Upload Document")
