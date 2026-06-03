@@ -16,7 +16,6 @@ if "pdf_ready" not in st.session_state:
 with st.sidebar:
     st.header("1. Upload Document")
     uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
-
     if uploaded_file and st.button("Process Document"):
         with st.spinner("Sending to backend engine..."):
             # Package the file as a multipart/form-data payload
