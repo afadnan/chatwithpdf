@@ -4,7 +4,6 @@ import os
 
 # Point to the backend container when in Docker, or localhost when developing locally
 BACKEND_API_URL = os.environ.get("BACKEND_API_URL", "http://localhost:8000")
-
 st.set_page_config(page_title="Chat with PDF UI", page_icon="📄", layout="wide")
 st.title("📄 Chat with PDF (Frontend UI)")
 # Initialize session state variables to remember chat history and file status
