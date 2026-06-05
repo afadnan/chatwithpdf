@@ -29,7 +29,6 @@ with st.sidebar:
                     st.error(f"Processing Error: {res.json().get('detail')}")
             except requests.exceptions.ConnectionError:
                 st.error("Connection failed. Is the backend API running?")
-
 # Main chat interface
 st.header("2. Ask Questions")
 if not st.session_state.pdf_ready:
