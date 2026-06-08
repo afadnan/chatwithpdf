@@ -34,6 +34,8 @@ with st.sidebar:
 
 
 
+
+
 # Main chat interface
 st.header("2. Ask Questions")
 if not st.session_state.pdf_ready:
